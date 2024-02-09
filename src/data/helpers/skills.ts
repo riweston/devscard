@@ -164,3 +164,111 @@ export const vue = createSkillFactory({
   iconColor: '#4FC08D',
   url: 'https://vuejs.org/',
 });
+
+
+
+
+export const azure = createSkillFactory({
+  name: 'Azure',
+  icon: 'simple-icons:microsoftazure',
+  iconColor: '#0089D6',
+  url: 'https://azure.microsoft.com/',
+});
+
+export const bash = createSkillFactory({
+  name: 'Bash',
+  icon: 'simple-icons:gnubash',
+  iconColor: '#4EAA25',
+  url: 'https://www.gnu.org/software/bash/',
+});
+
+export const cilium = createSkillFactory({
+  name: 'Cilium',
+  icon: 'simple-icons:cilium',
+  iconColor: '#00ADD8',
+  url: 'https://cilium.io/',
+});
+
+export const cue = createSkillFactory({
+  name: 'CUE',
+  icon: 'simple-icons:cncf',
+  iconColor: '#5884B8',
+  url: 'https://cuelang.org/',
+});
+
+export const dataPipeline = createSkillFactory({
+  name: 'Data Pipelines',
+  icon: 'simple-icons:apachekafka',
+  iconColor: '#231F20',
+  url: 'https://kafka.apache.org/',
+});
+
+export const gcp = createSkillFactory({
+  name: 'Google Cloud',
+  icon: 'simple-icons:googlecloud',
+  iconColor: '#4285F4',
+  url: 'https://cloud.google.com/',
+});
+
+export const githubActions = createSkillFactory({
+  name: 'GitHub Actions',
+  icon: 'simple-icons:githubactions',
+  iconColor: '#2088FF',
+  url: 'https://github.com',
+});
+
+export const golang = createSkillFactory({
+  name: 'Go',
+  icon: 'simple-icons:go',
+  iconColor: '#00ADD8',
+  url: 'https://golang.org/',
+});
+
+export const grafana = createSkillFactory({
+  name: 'Grafana',
+  icon: 'simple-icons:grafana',
+  iconColor: '#F46800',
+  url: 'https://grafana.com/',
+});
+
+export const flux = createSkillFactory({
+  name: 'Flux',
+  icon: 'simple-icons:flux',
+  iconColor: '#00ADD8',
+  url: 'https://fluxcd.io/',
+});
+
+export const kubernetes = createSkillFactory({
+  name: 'Kubernetes',
+  icon: 'simple-icons:kubernetes',
+  iconColor: '#326CE5',
+  url: 'https://kubernetes.io/',
+});
+
+export const nix = createSkillFactory({
+  name: 'Nix',
+  icon: 'simple-icons:nixos',
+  iconColor: '#5277C3',
+  url: 'https://nixos.org/',
+});
+
+export const prometheus = createSkillFactory({
+  name: 'Prometheus',
+  icon: 'simple-icons:prometheus',
+  iconColor: '#E6522C',
+  url: 'https://prometheus.io/',
+});
+
+export const python = createSkillFactory({
+  name: 'Python',
+  icon: 'simple-icons:python',
+  iconColor: '#3776AB',
+  url: 'https://www.python.org/',
+});
+
+export const terraform = createSkillFactory({
+  name: 'Terraform/Terragrunt',
+  icon: 'simple-icons:terraform',
+  iconColor: '#623CE4',
+  url: 'https://www.terraform.io/',
+});

@@ -3,20 +3,35 @@ import type { ReadonlyDeep } from 'type-fest';
 import {
   apolloGraphql,
   astro,
+  azure,
+  bash,
+  cue,
   chakraUi,
   cypress,
   eslint,
   firebase,
+  flux,
+  gcp,
+  githubActions,
+  golang,
+  kubernetes,
   mongoDb,
   nestJs,
+  nix,
   pnpm,
   postgreSql,
   prettier,
+  python,
   react,
   sass,
   supabase,
   tailwindCss,
+  terraform,
   typescript,
+  cilium,
+  prometheus,
+  grafana,
+  dataPipeline,
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -30,48 +45,86 @@ const skillsSectionData = {
     {
       title: 'I already know',
       skills: [
-        react({
+        azure({
+          level: 4,
+          description: `- AKS
+          - GitOps
+          - Azure DevOps
+          - Azure Functions
+          - SQL
+          - AAD
+          - DNS
+          - Front Door`
+        }),
+        gcp({
+          level: 4,
+          description: `- GKE
+          - CloudFunctions
+          - CloudRun
+          - Firestore
+          - Pub/Sub
+          - CloudLogging`
+        }),
+        terraform({
           level: 5,
-          description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
+          description: `Building robust, high quality modules aided by static code analysis and automated integration testing, maintained with tagged version control and dependency management tooling.
+
+          As a personal project I have also developed a custom provider to understand the underlying engineering.`,
+        }),
+        githubActions({
+          level: 5,
+        }),
+        bash({
+          level: 4,
+        }),
+        golang({
+          level: 3,
+          description: 'Developed and maintained a number of microservices and CLI tools in Go and used to automate integration testing and deployment for terraform modules.'
         }),
         typescript({
-          level: 4,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+          level: 2,
         }),
-        sass({
-          level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
-        }),
-        chakraUi({ level: 5 }),
-        tailwindCss({ level: 3 }),
-        prettier({ level: 5 }),
-        eslint({
-          level: 4,
-          description:
-            'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
-        }),
-        nestJs({
+        python({
           level: 3,
-          description:
-            'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
         }),
-        postgreSql({ level: 2 }),
-        mongoDb({ level: 1 }),
-        firebase({ level: 1 }),
-        pnpm({ level: 3 }),
+        kubernetes({
+          level: 4,
+          description: `Developed and maintained a number of shared services and applications in Kubernetes (AKS & GKE) including;
+          - Vault
+          - Consul
+          - Keycloak
+          - Jenkins
+          - Artifactory
+
+          Built a self-service platform for developers to deploy their own clusters with batteries included using services such as;
+          - cert-manager
+          - external-dns
+          - nginx-ingress`,
+        }),
+        flux({
+          level: 3,
+        }),
+        prometheus({
+          level: 2,
+        }),
+        grafana({
+          level: 2,
+        }),
       ],
     },
     {
       title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
+      skills: [
+        nix(),
+        cue(),
+        cilium(),
+        dataPipeline(),
+      ],
     },
     {
       title: 'I speak',
       skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
-        { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
+        { icon: 'circle-flags:gb', name: 'English - Native' },
       ],
     },
   ],

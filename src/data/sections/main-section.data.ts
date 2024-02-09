@@ -10,30 +10,36 @@ const mainSectionData = {
     visible: true,
   },
   image: import('@/assets/my-image.jpeg'),
-  fullName: 'Mark Freeman',
-  role: 'Senior React Developer',
+  fullName: 'Richard Weston',
+  role: 'Principal Cloud Systems Developer',
   details: [
-    { label: 'Phone', value: '605 475 6961', url: 'tel:605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com', url: 'mailto:mark.freeman.dev@gmail.com' },
-    { label: 'From', value: 'Warsaw, Poland' },
-    { label: 'Salary range', value: '18 000 - 25 000 PLN' },
+    { label: 'Phone', value: '+44 7738 276 354', url: 'tel:+44 7738 276 354' },
+    { label: 'Email', value: 'mail@riweston.io', url: 'mailto:mail@riweston.io' },
+    { label: 'From', value: 'London, UK' },
+    { label: 'Salary range', value: '£115,000+' },
   ],
   pdfDetails: [
-    { label: 'Phone', value: '605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com' },
-    { label: 'LinkedIn', value: '/in/mark-freeman', url: 'https://linkedin.com' },
-    { label: 'GitHub', value: '/mark-freeman', url: 'https://github.com' },
-    { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
+    { label: 'Phone', value: '+44 7738 276 354' },
+    { label: 'Email', value: 'mail@riweston.io' },
+    { label: 'LinkedIn', value: '/in/riweston', url: 'https://linkedin.com' },
+    { label: 'GitHub', value: '/riweston', url: 'https://github.com' },
   ],
   description:
-    'Lorem ipsum dolor sit amet, consectetur **adipiscing elit**. In sodales ac dui at *vestibulum*. In condimentum metus id dui tincidunt, in blandit mi [vehicula](/). Nulla lacinia, erat sit amet elementum vulputate, lectus mauris volutpat mi, vitae accumsan metus elit ut nunc. Vestibulum lacinia enim eget eros fermentum scelerisque. Proin augue leo, posuere ut imperdiet vitae, fermentum eu ipsum. Sed sed neque sagittis, posuere urna nec, commodo leo. Pellentesque posuere justo vitae massa volutpat maximus.',
-  tags: [{ name: 'Open for freelance' }, { name: 'Available for mentoring' }, { name: 'Working on side project' }],
+    'A Principal Cloud Systems Developer with over 10 years of experience in the IT industry. I have a strong background in developing and maintaining cloud-native applications, and I am passionate about cloud computing, DevOps culture and platform engineering. I am a strong advocate for automation and quality engineering practices, and as a technical leader, supporting and mentoring teams so that we all grow together.',
+  tags: [
+    { name: 'Open to opportunities' },
+    { name: 'Remote' },
+    { name: 'Full-time' },
+  ],
   action: {
     label: 'Download CV',
     url: '/cv.pdf',
-    downloadedFileName: 'CV-Mark_Freeman.pdf',
+    downloadedFileName: 'CV-Richard_Weston.pdf',
   },
-  links: [facebook({ url: '#' }), github({ url: '#' }), linkedin({ url: '#' }), twitter({ url: '#' })],
+  links: [
+    github({ url: 'https://github.com/riweston' }),
+    linkedin({ url: 'https://linkedin.com/in/riweston' }),
+  ],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;

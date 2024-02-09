@@ -1,19 +1,19 @@
 import type { Config } from '@/types/data';
-import { enUS } from 'date-fns/locale';
+import { enGB } from 'date-fns/locale';
 import type { ReadonlyDeep } from 'type-fest';
 
 const config = {
   i18n: {
-    locale: enUS,
+    locale: enGB,
     dateFormat: 'MMMM yyyy',
     translations: {
       now: 'now',
     },
   },
   meta: {
-    title: 'Mark Freeman - Senior React Developer',
+    title: 'Richard Weston - Principal Cloud Systems Developer',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales ac dui at vestibulum. In condimentum metus id dui tincidunt, in blandit mi vehicula.',
+      'A Principal Cloud Systems Developer with over 10 years of experience in the IT industry.',
     faviconPath: '/src/assets/my-image.jpeg',
   },
   pdf: {
