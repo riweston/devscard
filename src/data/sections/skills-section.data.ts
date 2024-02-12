@@ -88,6 +88,7 @@ const skillsSectionData = {
           level: 3,
         }),
         kubernetes({
+          name: 'Kubernetes',
           level: 4,
           description: `Developed and maintained a number of shared services and applications in Kubernetes (AKS & GKE) including;
           - Vault

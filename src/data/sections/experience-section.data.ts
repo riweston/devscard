@@ -2,29 +2,23 @@ import type { ExperienceSection } from '@/types/sections/experience-section.type
 import type { ReadonlyDeep } from 'type-fest';
 import { facebook, github, instagram, linkedin, twitter, website } from '../helpers/links';
 import {
-  chakraUi,
-  eslint,
-  firebase,
-  nextJs,
-  nx,
-  pnpm,
-  react,
-  reactQuery,
-  tailwindCss,
-  typescript,
-  vue,
-
   azure,
   golang,
   kubernetes,
   terraform,
-
+  windowsServer,
+  vmware,
+  activeDirectory,
+  powershell,
+  azureDevOps,
+  python,
+  gcp,
 } from '../helpers/skills';
 
 
 const experienceSectionData = {
   config: {
-    title: 'Work experience',
+    title: 'Work Experience',
     slug: 'experience',
     icon: 'fa6-solid:suitcase',
     visible: true,
@@ -45,15 +39,6 @@ const experienceSectionData = {
         - Supporting the sales team in pre-sales activities.
         - Working with the marketing team to create content.
       `,
-      tagsList: {
-        title: 'Technologies',
-        tags: [
-          azure(),
-          kubernetes(),
-          golang(),
-          terraform(),
-        ],
-      },
       previousRoles: [
         {
           role: 'Regional Discipline Lead',
@@ -68,67 +53,73 @@ const experienceSectionData = {
           dates: [new Date('2018-10'), new Date('2019-04')],
         },
       ],
-      links: [linkedin({ url: '#' }), website({ url: '#' })],
-    }],
-  /*   jobs: [
-
-
-      {
-        role: 'Senior front-end developer',
-        company: 'Google',
-        image: import('@/assets/logos/google-logo.jpg'),
-        dates: [new Date('2020-02'), null],
-        description: `
-          - In tristique vulputate augue vel egestas.
-          - Quisque ac imperdiet tortor, at lacinia ex.
-          - Duis vel ex hendrerit, commodo odio sed, aliquam enim.
-          - Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi.
-          - Nunc malesuada leo et est iaculis facilisis.
-          - Fusce eu urna ut magna malesuada fringilla.
-        `,
-        tagsList: {
-          title: 'Technologies',
-          tags: [react(), nextJs(), typescript(), nx(), firebase()],
-        },
-        links: [facebook({ url: '#' }), linkedin({ url: '#' })],
+      tagsList: {
+        title: 'Technologies',
+        tags: [
+          kubernetes({ name: 'AKS' }),
+          azure(),
+          gcp(),
+          kubernetes({ name: 'GKE' }),
+          golang(),
+          python(),
+          terraform(),
+        ],
       },
-      {
-        role: 'React.js developer',
-        company: 'Facebook',
-        image: import('@/assets/logos/facebook-logo.png'),
-        dates: [new Date('2019-04'), new Date('2020-02')],
-        description: `
-          - Aenean eget ultricies felis. Pellentesque dictum massa ut tellus eleifend, sed posuere massa mattis.
-          - Ut posuere massa lacus, eleifend molestie tortor auctor vel.
-          - Sed sed sollicitudin eros, id ultricies mi. Aliquam sodales elit vel ante tempor, non vehicula nibh facilisis.
-          - Cras feugiat ultricies maximus. Aliquam tristique ex odio, ac semper urna accumsan a.
-        `,
-        tagsList: {
-          title: 'Technologies',
-          tags: [react(), reactQuery(), chakraUi(), eslint()],
-        },
-        links: [website({ url: '#' }), instagram({ url: '#' })],
+      links: [
+        linkedin({ url: 'https://www.linkedin.com/company/cloudreach' }),
+        website({ url: 'https://www.cloudreach.com/' }),
+      ],
+    },
+    {
+      role: 'Infrastructure Engineer (Cloud & Automation)',
+      company: 'TFL',
+      image: import('@/assets/logos/tfl-logo.png'),
+      dates: [new Date('2018-04'), new Date('2018-10')],
+      description: `
+        - Built CI/CD pipelines and process to build IaC environments using Azure DevOps.
+        - Cost analysis and cloud resource consolidation using cloud governance and compliance tooling.
+        - Developed Azure native automation tools using DSC/Runbooks/Managed Service Catalogues
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [
+          azure(),
+          azureDevOps(),
+          powershell(),
+        ],
       },
-      {
-        role: 'Junior front-end developer',
-        company: 'GitLab',
-        image: import('@/assets/logos/gitlab-logo.png'),
-        dates: [new Date('2016-09'), new Date('2019-04')],
-        description: `
-          Nulla volutpat justo ante, rhoncus posuere massa egestas in:
-
-          - Quisque pellentesque, dolor nec sollicitudin iaculis, sem velit consequat ligula, eget tempus ligula leo et est.
-          - Maecenas ut elit sit amet nibh maximus condimentum in nec lorem. Pellentesque tincidunt odio vel leo suscipit, in interdum mi gravida.
-
-          Donec non vulputate augue 🤓
-        `,
-        tagsList: {
-          title: 'Technologies',
-          tags: [vue(), tailwindCss(), pnpm()],
-        },
-        links: [twitter({ url: '#' }), github({ url: '#' })],
+      links: [
+        linkedin({ url: 'https://www.linkedin.com/company/tfl' }),
+        website({ url: 'https://tfl.gov.uk/' }),
+      ],
+    },
+    {
+      role: 'Windows Systems Administrator',
+      company: 'Rackspace',
+      image: import('@/assets/logos/rackspace-logo.png'),
+      dates: [new Date('2015-03'), new Date('2018-04')],
+      description: `
+        - Managed public cloud hosted on Openstack platform.
+        - Dedicated private cloud support on VMware hosted infrastructure.
+        - Enterprise support for Windows Server.
+        - Health monitoring with SCOM and New Relic.
+        - Developed high quality Powershell functions for large scale execution across Rackspace managed services.
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [
+          activeDirectory(),
+          powershell(),
+          vmware(),
+          windowsServer(),
+        ],
       },
-    ], */
+      links: [
+        linkedin({ url: 'https://www.linkedin.com/company/rackspace' }),
+        website({ url: 'https://www.rackspace.com/' }),
+      ],
+    }
+  ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;
 
 export default experienceSectionData;
