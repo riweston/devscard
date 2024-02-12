@@ -6,8 +6,8 @@ import { visualizer } from 'rollup-plugin-visualizer';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://riweston.github.io',
-  base: '/devscard/',
+  site: 'https://cv.riweston.io',
+  base: '/',
   integrations: [tailwind(), image(), compress()],
   vite: {
     plugins: [visualizer()],
