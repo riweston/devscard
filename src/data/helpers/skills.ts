@@ -177,7 +177,7 @@ export const azure = createSkillFactory({
 
 export const bash = createSkillFactory({
   name: 'Bash',
-  icon: 'simple-icons:gnubash',
+  icon: 'mdi:bash',
   iconColor: '#4EAA25',
   url: 'https://www.gnu.org/software/bash/',
 });
@@ -205,7 +205,7 @@ export const dataPipeline = createSkillFactory({
 
 export const gcp = createSkillFactory({
   name: 'Google Cloud',
-  icon: 'simple-icons:googlecloud',
+  icon: 'logos:google-cloud',
   iconColor: '#4285F4',
   url: 'https://cloud.google.com/',
 });
@@ -238,12 +238,15 @@ export const flux = createSkillFactory({
   url: 'https://fluxcd.io/',
 });
 
-export const kubernetes = createSkillFactory({
-  name: 'Kubernetes',
+export const createKubernetesSkill = (flavor: string) => createSkillFactory({
+  name: `Kubernetes (${flavor})`,
   icon: 'simple-icons:kubernetes',
   iconColor: '#326CE5',
   url: 'https://kubernetes.io/',
 });
+
+// Usage:
+export const kubernetes = createKubernetesSkill('FlavorName');
 
 export const nix = createSkillFactory({
   name: 'Nix',
@@ -267,8 +270,161 @@ export const python = createSkillFactory({
 });
 
 export const terraform = createSkillFactory({
-  name: 'Terraform/Terragrunt',
+  name: 'Terraform',
   icon: 'simple-icons:terraform',
   iconColor: '#623CE4',
   url: 'https://www.terraform.io/',
+});
+
+export const cloudFunctions = createSkillFactory({
+  name: 'Cloud Functions',
+  icon: 'logos:google-cloud-functions',
+  iconColor: '#4285F4',
+  url: 'https://cloud.google.com/functions',
+});
+
+export const cloudRun = createSkillFactory({
+  name: 'Cloud Run',
+  icon: 'logos:google-cloud-run',
+  iconColor: '#4285F4',
+  url: 'https://cloud.google.com/run',
+});
+
+export const pubSub = createSkillFactory({
+  name: 'Pub/Sub',
+  icon: 'simple-icons:googlepubsub',
+  iconColor: '#4285F4',
+  url: 'https://cloud.google.com/pubsub',
+});
+
+export const gitLab = createSkillFactory({
+  name: 'GitLab',
+  icon: 'simple-icons:gitlab',
+  iconColor: '#FCA326',
+  url: 'https://gitlab.com/',
+});
+
+export const docker = createSkillFactory({
+  name: 'Docker',
+  icon: 'simple-icons:docker',
+  iconColor: '#2496ED',
+  url: 'https://www.docker.com/',
+});
+
+export const helm = createSkillFactory({
+  name: 'Helm',
+  icon: 'simple-icons:helm',
+  iconColor: '#0F1689',
+  url: 'https://helm.sh/',
+});
+
+export const consul = createSkillFactory({
+  name: 'Consul',
+  icon: 'simple-icons:consul',
+  iconColor: '#F24C3D',
+  url: 'https://www.consul.io/',
+});
+
+// vault
+export const vault = createSkillFactory({
+  name: 'Vault',
+  icon: 'simple-icons:vault',
+  iconColor: '#000000',
+  url: 'https://www.vaultproject.io/',
+});
+
+// keycloak
+export const keycloak = createSkillFactory({
+  name: 'Keycloak',
+  icon: 'mdi:key',
+  iconColor: '#FFD700',
+  url: 'https://www.keycloak.org/',
+});
+
+// jenkins
+export const jenkins = createSkillFactory({
+  name: 'Jenkins',
+  icon: 'vscode-icons:file-type-jenkins',
+  iconColor: '#D24939',
+  url: 'https://www.jenkins.io/',
+});
+
+// artifactory
+export const artifactory = createSkillFactory({
+  name: 'Artifactory',
+  icon: 'logos:jfrog',
+  iconColor: '#000000',
+  url: 'https://jfrog.com/artifactory/',
+});
+
+// nginx-ingress
+export const ingressNginx = createSkillFactory({
+  name: 'Ingress Nginx',
+  icon: 'simple-icons:nginx',
+  iconColor: '#009639',
+  url: 'https://kubernetes.github.io/ingress-nginx/',
+});
+
+// kustomize
+export const kustomize = createSkillFactory({
+  name: 'Kustomize',
+  icon: 'simple-icons:yaml',
+  iconColor: '#5578FF',
+  url: 'https://kustomize.io/',
+});
+
+// istio
+export const istio = createSkillFactory({
+  name: 'Istio',
+  icon: 'simple-icons:istio',
+  iconColor: '#00ADD8',
+  url: 'https://istio.io/',
+});
+
+// inspec
+export const inspec = createSkillFactory({
+  name: 'Inspec',
+  icon: 'simple-icons:chef',
+  iconColor: '#F24C3D',
+  url: 'https://www.inspec.io/',
+});
+
+// Windows Server
+export const windowsServer = createSkillFactory({
+  name: 'Windows Server',
+  icon: 'simple-icons:windows11',
+  iconColor: '#0078D6',
+  url: 'https://www.microsoft.com/en-us/cloud-platform/windows-server',
+});
+
+// VMWare
+export const vmware = createSkillFactory({
+  name: 'VMware',
+  icon: 'carbon:logo-vmware',
+  iconColor: '#607078',
+  url: 'https://www.vmware.com/',
+});
+
+// Active Directory
+export const activeDirectory = createSkillFactory({
+  name: 'Active Directory',
+  icon: 'mdi:person-box',
+  iconColor: '#0078D6',
+  url: 'https://www.microsoft.com/en-us/cloud-platform/active-directory',
+});
+
+// PowerShell
+export const powershell = createSkillFactory({
+  name: 'PowerShell',
+  icon: 'simple-icons:powershell',
+  iconColor: '#5391FE',
+  url: 'https://docs.microsoft.com/en-us/powershell/',
+});
+
+// Azure DevOps
+export const azureDevOps = createSkillFactory({
+  name: 'Azure DevOps',
+  icon: 'simple-icons:azuredevops',
+  iconColor: '#0078D7',
+  url: 'https://azure.microsoft.com/en-us/services/devops/',
 });
