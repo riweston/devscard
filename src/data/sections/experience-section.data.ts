@@ -28,17 +28,8 @@ const experienceSectionData = {
       role: 'Principal Cloud Systems Developer',
       company: 'Cloudreach',
       image: import('@/assets/logos/cloudreach-logo.png'),
-      dates: [new Date('2020-02'), null],
-      description: `
-        - Leading a team of 10 engineers to deliver a cloud-native platform for a major UK bank.
-        - Designing and implementing a Kubernetes-based platform on Azure.
-        - Developing and maintaining cloud-native applications.
-        - Mentoring and supporting team members.
-        - Leading the adoption of best practices and quality engineering.
-        - Working with stakeholders to understand requirements and deliver solutions.
-        - Supporting the sales team in pre-sales activities.
-        - Working with the marketing team to create content.
-      `,
+      dates: [new Date('2018-10'), null],
+      description: 'Principal Cloud Systems Developer at Cloudreach, working with a variety of clients to deliver cloud native solutions. I am responsible for leading the technical delivery of projects, providing technical leadership and mentoring to the team, working with the sales team to provide technical pre-sales support and outlining a level of effort for the delivery of projects. Internally I work closely with the leadership team to support the growth of the business and the development of the engineering practice.',
       previousRoles: [
         {
           role: 'Regional Discipline Lead',
@@ -75,11 +66,7 @@ const experienceSectionData = {
       company: 'TFL',
       image: import('@/assets/logos/tfl-logo.png'),
       dates: [new Date('2018-04'), new Date('2018-10')],
-      description: `
-        - Built CI/CD pipelines and process to build IaC environments using Azure DevOps.
-        - Cost analysis and cloud resource consolidation using cloud governance and compliance tooling.
-        - Developed Azure native automation tools using DSC/Runbooks/Managed Service Catalogues
-      `,
+      description: 'In my role at TFL, I was responsible for supporting the cloud infrastructure and automation of the Azure platform. I was responsible for building CI/CD pipelines and process to build IaC environments using Azure DevOps, cost analysis and cloud resource consolidation using cloud governance and compliance tooling, and developed Azure native automation tools using DSC/Runbooks/Managed Service Catalogues.',
       tagsList: {
         title: 'Technologies',
         tags: [
@@ -98,13 +85,7 @@ const experienceSectionData = {
       company: 'Rackspace',
       image: import('@/assets/logos/rackspace-logo.png'),
       dates: [new Date('2015-03'), new Date('2018-04')],
-      description: `
-        - Managed public cloud hosted on Openstack platform.
-        - Dedicated private cloud support on VMware hosted infrastructure.
-        - Enterprise support for Windows Server.
-        - Health monitoring with SCOM and New Relic.
-        - Developed high quality Powershell functions for large scale execution across Rackspace managed services.
-      `,
+      description: 'At Rackspace, I was a member of the Windows Systems Administration team in the enterprise support team. I was responsible for providing technical support for Windows Server typically hosted on VMware infrastructure. I also provided support for public cloud hosted on Openstack platform, health monitoring with SCOM and New Relic, and developed reusable Powershell functions for large scale execution across Rackspace managed services.',
       tagsList: {
         title: 'Technologies',
         tags: [
