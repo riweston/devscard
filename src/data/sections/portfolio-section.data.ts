@@ -105,7 +105,7 @@ const portfolioSectionData = {
     },
     {
       name: 'Shared Services Platform',
-      description: 'A Kubernetes platform for shared services and applications. In my role I was responsible for planning and implementing a Kubernetes platform on Azure to host shared services and required to support a new SaaS product from the development team. These features included Vault, Consul, Keycloak, Jenkins and Artifactory. A large degree of focus was placed on standardisation and automation to ensure the platform was easy to operate and maintain. To achieve this I designed a number of desployment patterns to facilitate workload identity, automated DNS and global load balancing.',
+      description: 'A Kubernetes platform for shared services and applications. In my role I was responsible for planning and implementing a Kubernetes platform on Azure to host shared services and required to support a new SaaS product from the development team. These features included Vault, Consul, Keycloak, Jenkins and Artifactory. A large degree of focus was placed on standardisation and automation to ensure the platform was easy to operate and maintain. To achieve this I designed a number of deployment patterns to facilitate workload identity, automated DNS and global load balancing.',
       image: import('@/assets/logos/temenos-logo.jpeg'),
       dates: [new Date('2020-10'), new Date('2021-11')],
       details: [

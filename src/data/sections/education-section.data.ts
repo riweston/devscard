@@ -15,7 +15,7 @@ const educationSectionData = {
       institution: 'Staffordshire University',
       image: import('@/assets/logos/staffs-logo.png'),
       dates: [new Date('2006.10'), new Date('2010.07')],
-      description: 'Master degree. Specialization in computer games design.',
+      description: 'Bachelor of Science with Honours in Computer Games Design.',
       links: [],
     },
   ],
