@@ -81,7 +81,7 @@ const portfolioSectionData = {
     {
       name: 'GitOps Platform',
       description: 'A well architected pattern for deploying and managing AKS clusters using GitOps. In my role I was responsible for the initial technical pre-sales and discovery which led to the design and implementation of a Kubernetes platform on Azure with a view to shifting the organisation to a GitOps model. Additional features included canary deployments, automated testing and ephemeral environments to support UAT and QA.',
-      image: import('@/assets/logos/ubs-logo.png'),
+      image: import('@/assets/logos/ubs-logo.jpeg'),
       dates: [new Date('2021-11'), new Date('2022-12')],
       details: [
         { label: 'Team size', value: '8 people' },

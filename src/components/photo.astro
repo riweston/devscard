@@ -10,7 +10,7 @@ export interface Props {
   height?: number;
 }
 
-const { src, ...props } = Astro.props;
+const { src, backgroundColor, ...props } = Astro.props;
 
 const isRemoteImage = typeof src === 'string';
 const loading = import.meta.env.PUBLIC_APP_ENV === 'snapshot' ? 'eager' : 'lazy';
@@ -18,7 +18,7 @@ const loading = import.meta.env.PUBLIC_APP_ENV === 'snapshot' ? 'eager' : 'lazy'
 
 {
   isRemoteImage ? (
-    <img src={src} {...props} />
+    <img src={src} {...props} style={{ backgroundColor: 'white' }} />
   ) : (
     <Image format="webp" fit="cover" src={src} loading={loading} {...props} />
   )
