@@ -1,0 +1,34 @@
+---
+import type { CertificatesSection } from '@/types/sections/certificates-section.types';
+import SectionCard from '@/web/components/section-card.astro';
+import Certificate from './certificate.astro';
+
+export interface Props extends CertificatesSection {}
+
+const { config, certificates } = Astro.props;
+console.log('certificates', certificates);
+---
+
+<SectionCard {...config}>
+  <div class="grid-container">
+    {
+      certificates.map((certificate, index) => (
+        <>
+          <Certificate key={`certificate-${index}`} {...certificate} />
+        </>
+      ))
+    }
+  </div>
+</SectionCard>
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); /* Adjust based on your design needs */
+    gap: 1rem;
+    width: 100%; /* Ensure the container takes full width */
+  }
+  .divider {
+    grid-column: span 2; /* Or the number of columns the grid has */
+  }
+</style>
